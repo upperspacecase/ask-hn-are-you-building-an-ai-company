@@ -1,0 +1,139 @@
+{
+  "status": "killed",
+  "killed_at_stage": 4,
+  "kill_reason": "3+ well-funded solutions exist and no clear differentiator survives. Glean (enterprise knowledge + agents, >$600M raised), Dust.tt (funded), Onyx/Danswer (33k GitHub stars, VC-backed, free self-host), Hyper (YC P26, live at heyhyper.ai, launched June 2026 as exactly 'a company brain for AI agents'), and supermemory's Company Brain all target this identical pitch. The graveyard is damning: supermemory ran Company Brain as a PAID product with 'thousands of users' and discontinued it in 2026, then open-sourced the whole thing as a free one-click Cloudflare deploy (github.com/supermemoryai/company-brain, 1,094 stars, created 2026-09-25). A funded team with real paying users could not sustain this commercially and now gives the full product away for free. Sylph (getnao/sylph, YC X25 founder) is also free and open source for the git-repo/Claude Code approach the OP is already leaning toward. The HN thread's own commenters told the OP to just use Claude Code plus a git repo rather than buy a vendor tool. The OP's genuine open gaps (cost of always-on agent, concurrent writes, permissions) are being worked by Hyper and by Simon Sp\u00e4ti's OmniGraph (ssp.sh), and a 1-2 day MVP cannot credibly out-execute a free open-sourced ex-paid product plus two YC companies plus Glean. Any differentiator I could write (Spanish-language, SMB-only, transcript-to-CRM only) is reframing the post, not reading it.",
+  "stage_2": {
+    "customer": "Senior backend engineer or tech lead at a 20-100 person Spanish-speaking (Argentine, per the Boca/River exchange) B2B software or IT-services company that serves a handful of enterprise clients, each with its own deployment/config, where client status lives in meeting transcripts, tickets, logs and people's heads. They have been handed a top-down CTO mandate to build an internal 'AI brain', already use Claude Code / coding agents personally, have no dedicated budget line for Glean-tier enterprise tooling, and must show something working within a quarter.",
+    "where": "Hacker News (Ask HN / Show HN 'company brain' threads), r/ClaudeAI, r/LocalLLaMA, r/ExperiencedDevs, Anthropic Discord, LangChain Discord, the Latent Space and The New AI Order (thenewaiorder.substack.com) newsletters, Sylph and supermemory Discords, AI Engineer talks (ai.engineer).",
+    "pays_for": "Claude Pro/Max or Cursor seats per engineer ($20-200/mo each), Notion or Confluence, Slack, a meeting transcription tool (Fireflies/Otter/Read.ai at ~$10-20/user/mo), a CRM (HubSpot/Pipedrive), Anthropic/OpenAI API spend, and vector DB or LangSmith-style observability on a hobby/team tier."
+  },
+  "stage_3": {
+    "real_posts": [
+      "https://news.ycombinator.com/item?id=48232533",
+      "https://www.ssp.sh/blog/from-obsidian-to-enterprise-company-brain/",
+      "https://news.ycombinator.com/item?id=48387095",
+      "https://github.com/supermemoryai/company-brain",
+      "https://news.ycombinator.com/item?id=49071321"
+    ],
+    "urgent": "CTO mandate with no opt-out ('The CTO wants it, there's no way around that', 'quitting is not possible'). Sylph founder built hers in two months and now 'fully runs' the company on it. Hyper's Launch HN frames the same pain (knowledge scattered in heads, Slack, stale docs; MCP sessions lose insight). Two HN commenters (Benjaminsen, krys_agentivity) report having built this for multiple clients already.",
+    "valuable": "The direct cost is at least one senior engineer FTE assigned indefinitely to the build (months of salary), plus the stated status quo: 'siloed data and no one has access to the whole picture'. supermemory's paid Company Brain reached 'thousands of users' before shutdown, demonstrating budgets exist for it. The OP gives no hours-per-week figure for the downstream employees."
+  },
+  "stage_4": {
+    "software": [
+      "Glean (glean.com): enterprise knowledge search + agents over Slack/Drive/Jira; insufficient for the OP only on price and procurement weight at a small LatAm company, not on capability.",
+      "Hyper (heyhyper.ai, YC P26, Launch HN June 2026): a shared 'company brain' feeding AI agents from Slack/docs/convos; directly the OP's pitch, already funded and live.",
+      "Onyx, formerly Danswer (github.com/onyx-dot-app/onyx, 33,279 stars, pushed 2026-11-08): free self-hosted connectors + chat + agents over company sources; covers the 'query different sources' and chat-interface needs at zero license cost.",
+      "supermemory Company Brain (github.com/supermemoryai/company-brain, 1,094 stars): ex-paid Slack-native company brain with memory, MCP actions into GitHub/Linear/Notion/Google Workspace, one-click Cloudflare deploy, Apache 2.0, free.",
+      "Sylph (github.com/getnao/sylph, 218 stars): open-source git-repo company brain for Claude Code/Codex/Cursor with skills and a self-learning loop, exactly the 'llm wiki + skills repo' the OP sketched."
+    ],
+    "workarounds": [
+      "Git repo of markdown (Obsidian vault or Karpathy-style LLM wiki) committed alongside CLAUDE.md/AGENTS.md, queried by each employee's own Claude Code seat; this is what two HN commenters and the Sylph founder actually did.",
+      "Notion AI / Slack AI / Google Gemini for Workspace answering questions over the docs that already live there, with no custom build.",
+      "A shared Google Drive folder of transcripts plus a human (account manager) updating the CRM after each call, i.e. 'just deal with it', which is the OP's current state."
+    ],
+    "graveyard": "supermemory discontinued its paid Company Brain in 2026 after reaching 'thousands of users' and open-sourced the entire product as a free self-deploy (announcement linked in README, repo created 2026-09-25). A funded team with paying users exited the paid market and set the price to zero. 'Show HN: Sync \u2013 A real-time company brain' (Oct 2024, 3 points) went nowhere. A Medium piece 'The Company Brain Is a Myth' (data-science-collective) argues the concept is vendor marketing. HN commenter krys_agentivity reports a year building an internal brain DB that is 'complex to exploit in production' and still unreleased. The structural reasons (knowledge maintenance cost, contradiction handling, graph upkeep that Anthropic engineers reportedly called 'cost prohibitive for most orgs' per nycdatasci) have not changed."
+  },
+  "stage_5": null,
+  "stage_6": null,
+  "id": "hn_50379710",
+  "title": "Ask HN: Are you building an AI company brain?",
+  "url": "https://news.ycombinator.com/item?id=50379710",
+  "source": "hackernews",
+  "score": 7,
+  "num_comments": 13,
+  "app_name": "ask_hn_are_you_building_an_ai_company",
+  "summary": "Ask HN: Are you building an AI company brain?",
+  "tech_stack": "Next.js + TypeScript + Tailwind CSS",
+  "_fallback_kill_stage": 4,
+  "_fallback_kill_reason": "3+ well-funded solutions exist and no clear differentiator survives. Glean (enterprise knowledge + agents, >$600M raised), Dust.tt (funded), Onyx/Danswer (33k GitHub stars, VC-backed, free self-host), Hyper (YC P26, live at heyhyper.ai, launched June 2026 as exactly 'a company brain for AI agents'), and supermemory's Company Brain all target this identical pitch. The graveyard is damning: supermemory ran Company Brain as a PAID product with 'thousands of users' and discontinued it in 2026, then open-sourced the whole thing as a free one-click Cloudflare deploy (github.com/supermemoryai/company-brain, 1,094 stars, created 2026-09-25). A funded team with real paying users could not sustain this commercially and now gives the full product away for free. Sylph (getnao/sylph, YC X25 founder) is also free and open source for the git-repo/Claude Code approach the OP is already leaning toward. The HN thread's own commenters told the OP to just use Claude Code plus a git repo rather than buy a vendor tool. The OP's genuine open gaps (cost of always-on agent, concurrent writes, permissions) are being worked by Hyper and by Simon Sp\u00e4ti's OmniGraph (ssp.sh), and a 1-2 day MVP cannot credibly out-execute a free open-sourced ex-paid product plus two YC companies plus Glean. Any differentiator I could write (Spanish-language, SMB-only, transcript-to-CRM only) is reframing the post, not reading it.",
+  "_kill_report": "KILLS -- 2026-11-07\n\nTotal candidates evaluated: 28\nKilled: 28  |  Passed to MVP: 0\n\nBy stage:\n  Stage 1 (signal):       22 killed\n  Stage 2 (customer):     1 killed\n  Stage 3 (problem):      2 killed\n  Stage 4 (alternatives): 3 killed\n  Stage 5 (approach):     0 killed\n  Stage 6 (hypothesis):   0 killed\n",
+  "_total_evaluated": 28,
+  "_total_killed": 28,
+  "_fallback": true,
+  "_runners_up": [
+    {
+      "status": "killed",
+      "killed_at_stage": 4,
+      "kill_reason": "Three well-funded incumbents already do exactly what the post asks for: Kayak 'Hacker Fares' combine two one-ways from different airlines into a round trip (failure mode #1), Kiwi.com's virtual interlining combines unrelated carriers and searches whole metro areas (failure modes #1 and #3), and Skyscanner supports 'London (Any)' multi-airport open-jaw returns with mixed carriers (#3). Google Flights itself has a 'Separate tickets' toggle, which was the top-voted answer on the corroborating r/Flights thread. I cannot name a differentiator a new entrant could ship: the gap is data coverage, and indie builders have no access to comprehensive fare inventory without paying for Duffel/Amadeus GDS feeds. The GitHub graveyard confirms the structural wall: every archived project in this space is a Google Flights scraper that died (puppeteer-flights 2020, pygfs 2019, scrapy-google-flights 2020, flight-scraper 2022, google-flight-scraper 2024, two Apify repos retired in favor of a paid API). That structural reason has not changed.",
+      "stage_2": {
+        "customer": "Self-booking leisure travelers who fly internationally 3+ times a year from a multi-airport metro (London, NYC, SF Bay, LA), build their own itineraries from mixed-carrier one-ways and open-jaw returns to save money or cut a connection, and use Google Flights as their primary search before booking direct on the airline site. The HN author (Heathrow/Gatwick example, tracks new route launches) and the r/Flights poster (visits family overseas several times a year, found $200+ savings splitting tickets) both fit.",
+        "where": "r/Flights, r/travel, r/awardtravel, r/TravelHacks, FlyerTalk 'Online Travel Booking and Bidding Agencies' forum, the Going (ex-Scott's Cheap Flights) and Thrifty Traveler newsletters, airline-specific subs like r/americanairlines where the first corroborating post appeared",
+        "pays_for": "Going Premium (~$49/yr), Thrifty Traveler Premium (~$10/mo), Dollar Flight Club, ExpertFlyer (~$10/mo), Point.me (~$12/mo), Flighty (~$49/yr); none of these solve itinerary-construction gaps, they alert on deals"
+      },
+      "stage_3": {
+        "real_posts": [
+          "https://www.reddit.com/r/Flights/comments/1v0kdjr/why_doesnt_google_flights_show_cheaper_mixed/",
+          "https://www.reddit.com/r/americanairlines/comments/15qx95x/why_is_google_flights_is_not_showing_me_a/"
+        ],
+        "urgent": "Both posters were mid-booking for specific trips when they posted (JFK-KOA on AA out, Hawaiian/JetBlue back; overseas family visits several times a year). Flight searches have hard purchase deadlines because fares move daily, so a fix would be tried the same week. Reddit search also surfaced 'Google Flights options not showing on airlines websites' (r/Flights, 2 months ago) and 'Routes on Google flights but not on app' (r/SouthwestAirlines, 1 month ago), showing the complaint recurs. Searches tried: DuckDuckGo x6 (mostly rate-limited/no results), HN Algolia 'google flights missing', Reddit site search x2.",
+        "valuable": "r/Flights poster quantified it: splitting outbound and return across airlines was 'more than $200 cheaper' per trip than the round trip Google Flights surfaced. HN author's missed itinerary was 2 segments vs 3, i.e. one fewer connection (hours of travel time) per trip."
+      },
+      "stage_4": {
+        "software": [
+          "Kayak (kayak.com) Hacker Fares: combines two one-way tickets on different airlines into one round-trip result, directly covering failure mode #1; insufficient only in that the customer finds its UI slower and noisier than Google Flights, which is not a product gap",
+          "Kiwi.com (kiwi.com) virtual interlining: combines unrelated carriers including LCCs and supports metro-area searches (London any airport to any airport), covering #1 and #3; downside is self-transfer risk, which the customer already accepts",
+          "Skyscanner (skyscanner.net): 'London (Any)' origin/destination with mixed-carrier combinations, covering #3 and much of #1; ITA Matrix (matrix.itasoftware.com) additionally offers power-user routing codes for #2 but does not book"
+        ],
+        "workarounds": [
+          "Turn on the 'Separate tickets' option in Google Flights (top-voted answer on the r/Flights thread)",
+          "Search outbound and return as two separate one-way searches and add them up by hand",
+          "Go directly to the airline website when a new route is announced, which the HN author already does"
+        ],
+        "graveyard": "GitHub archived repos matching 'google flights': jurgis/puppeteer-flights (2020), havocesp/pygfs (2019), patkle/scrapy-google-flights (2020), germainlefebvre4/flight-scraper (2022), kadri-nizam/google-flight-scraper (2024), ikario404/google-Flights (2017), jaredscheib/flighthop (2017), johnisanerd Apify-Google-Flights-Deals-API and Google-Travel-Explore-API (retired, redirect to a paid Apify scraper). All were scrapers of Google Flights that died from scraping fragility and lack of a legitimate fare-data source. That structural barrier (no affordable comprehensive fare inventory for indie builders) is unchanged."
+      },
+      "stage_5": null,
+      "stage_6": null,
+      "id": "hn_50358924",
+      "title": "Ask HN: What is Google Flights' business model and has it changed recently?",
+      "url": "https://news.ycombinator.com/item?id=50358924",
+      "source": "hackernews",
+      "score": 8,
+      "num_comments": 7
+    },
+    {
+      "status": "killed",
+      "killed_at_stage": 4,
+      "kill_reason": "The acute problem (reinstating a suspended GitHub identity) can only be solved by GitHub; no third party can act on it. The only product-shaped adjacent space is preventive repo backup/mirroring, where 3+ established and funded solutions already exist (GitProtect.io, Cloudback with 14k+ repos and SOC 2, Rewind/BackHub) alongside free, actively maintained OSS (gickup 1.5k stars, python-github-backup 1.6k stars, mirror-to-gitea). I cannot articulate a differentiator: a backup does not restore the author's ability to push, review, or administer the org, and willingness to pay appears only post-suspension, exactly when no product can help. The graveyard (qvl/ghbackup, ddollar/github-backup, ghaiklor/backup-my-github all archived) shows hobby backup tools die because the space is commoditized by free OSS plus marketplace vendors, and that structure has not changed.",
+      "stage_2": {
+        "customer": "Technical co-founders of 2-20 person software companies on GitHub Team/Enterprise (paying ~$4-21/user/mo), whose personal GitHub account from the 2010s is simultaneously an org owner, the home of their open-source projects, and their daily work identity. Examples in the found posts: the Gatsby maintainer who was admin of his company org (HN 23832437), the LibreTube lead dev (HN 30696077), lucidrains (HN 47009749), the enterprise-org co-founder in this post.",
+        "where": "Hacker News (every suspension post here is an Ask/Tell HN), GitHub Community Discussions (github.community), r/github, r/ExperiencedDevs, r/devops, r/opensource, the Codeberg and Forgejo Matrix rooms where people land after a suspension.",
+        "pays_for": "GitHub Team/Enterprise seats, GitHub Copilot, 1Password/Bitwarden Teams, Vercel/Netlify/Railway, Snyk or Dependabot alternatives, CI minutes, and in a few cases repo backup SaaS (GitProtect, Cloudback, Rewind)."
+      },
+      "stage_3": {
+        "real_posts": [
+          "https://news.ycombinator.com/item?id=23832437",
+          "https://news.ycombinator.com/item?id=33576369",
+          "https://news.ycombinator.com/item?id=34817163",
+          "https://news.ycombinator.com/item?id=41326500",
+          "https://news.ycombinator.com/item?id=50259246",
+          "https://news.ycombinator.com/item?id=50286316",
+          "https://news.ycombinator.com/item?id=39422068",
+          "https://news.ycombinator.com/item?id=46602838"
+        ],
+        "urgent": "Blocked work the same day: 'I can not access the work of a company I have co-founded.' The 2020 poster (657 points) wrote 'All of my office work got stopped, I'm the admin of the org that is used in our company' and lost a GitHub Sponsor within a week. Two further suspension posts appeared in the last two weeks alone (Oct 27 and Oct 29, 2026).",
+        "valuable": "A co-founder fully blocked from the company codebase for days to months; the 2020 poster lost paid sponsorship income and had every employee's workflow disrupted while the sole org admin was locked out. Paying enterprise org with an owner who cannot administer billing or members. Cost is lost working days of the most expensive person on the team, not annoyance."
+      },
+      "stage_4": {
+        "software": [
+          "GitProtect.io (https://gitprotect.io): funded DevOps backup/DR SaaS for GitHub orgs; insufficient because it restores repo data, not a suspended personal identity or org-owner access.",
+          "Cloudback (https://cloudback.it): GitHub Marketplace backup for 14k+ repos with SOC 2 and BYOK; same gap, protects data not the ability to work.",
+          "Rewind BackHub (https://rewind.com/products/backups/github/): established GitHub backup vendor (Cloudflare blocked my fetch, so description not verified from the page); same gap. Free OSS also covers mirroring: cooperspencer/gickup (1,506 stars, pushed Nov 2026), josegonzalez/python-github-backup (1,605 stars, pushed Nov 2026), jaedle/mirror-to-gitea (228 stars)."
+        ],
+        "workarounds": [
+          "Post to Hacker News and hope a GitHub employee notices (the 2020 thread, Automatic1111, and the LibreTube cases all resolved via public visibility).",
+          "Have a co-founder or second org owner keep the company moving while the suspended person waits on the reinstatement ticket (the author says 'others still can luckily').",
+          "Keep a second GitHub account or a Codeberg/GitLab mirror and just deal with the loss of commit history and OSS attribution."
+        ],
+        "graveyard": "Archived: qvl/ghbackup (163 stars, last push 2022), ddollar/github-backup (113, 2020), ghaiklor/backup-my-github (110, 2018), benbalter/github_records_archiver (110, 2021), zalando/ghe-backup (34, 2021). They died because repo backup is commoditized: free, actively maintained OSS (gickup, python-github-backup) plus GitHub Marketplace vendors cover it, and nobody pays for lockout insurance before they are locked out. That structure is unchanged."
+      },
+      "stage_5": null,
+      "stage_6": null,
+      "id": "hn_50342838",
+      "title": "Ask HN: What to do about incorrectly suspended GitHub account, no notice?",
+      "url": "https://news.ycombinator.com/item?id=50342838",
+      "source": "hackernews",
+      "score": 7,
+      "num_comments": 3
+    }
+  ]
+}

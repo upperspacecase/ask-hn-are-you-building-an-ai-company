@@ -1,0 +1,17 @@
+HOOK: "Where are we with Client X?" answered from their last call transcript, their open tickets and their deploy log, not from whoever happened to be in the meeting.
+
+SUBHEADLINE: For tech leads at 20-to-100-person software shops who were told to build the company's AI brain this quarter and have no budget line to buy one.
+
+VALUE_PROP:
+One status answer per enterprise client, assembled from meeting transcripts, tickets, logs and that client's own deployment config.
+Runs on your servers with the model endpoint you choose. No vendor call, no procurement, no per-seat license.
+Connectors live as code in your repo, so you extend them with Claude Code instead of waiting on a settings page.
+
+CTA: Run it on one client
+
+SECONDARY_CTA: Read the architecture first
+
+OBJECTIONS:
+- "Onyx is free and Hyper already exists. Why this?" Both index Slack and docs and answer "find me the document"; neither keys every source to a specific client and its deployment, which is the question your CTO actually asks on Monday.
+- "I can build this myself with Claude Code in a weekend." The chat box is the weekend; keeping transcripts, tickets and logs current, deduplicated and permissioned per client is the quarter, and that is the part shipped here.
+- "Our enterprise clients will not let their data touch a US SaaS." Nothing leaves your VPC except calls to the model endpoint you configure, and you can point that at a local model if the contract requires it.

@@ -1,0 +1,9 @@
+All three fixes are applied. Type check and ESLint pass on the changed files.
+
+**Fix 1, CTA promise** (`src/components/Hero.tsx`): button now reads "Email me the starter repo". Helper line is "One command, your servers, your existing Claude Code setup, no account. First connector set ships December 15, 2026; nothing else arrives before that." The success state names the same date.
+
+**Fix 2, objections** (`src/app/page.tsx`): added the three OBJECTIONS from marketing_copy.txt as a plain `dl` question-and-answer block between the logo strip and footer, using existing `body`, `text-ink`, and `text-muted` tokens. No new component or accent color.
+
+**Fix 3, insider references**: logo strip caption is now "The starter repo ships with read-only connectors for:". Footer link label is "The HN thread that started this".
+
+Two things to flag. The project had no ship date anywhere, so December 15, 2026 is my pick and should be confirmed. The objections block is technically a fifth region, which the audit required but the 4-region rule discourages.

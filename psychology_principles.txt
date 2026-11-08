@@ -1,0 +1,15 @@
+Assumption: the "Behavioral test signal" field arrived empty (stage 6 not generated). Principles below assume the signal is a senior engineer leaving a work email to receive the starter kit / repo. Re-run if the signal differs.
+
+PRINCIPLE 1: Aha! Moment
+  Why it fits: This engineer's real doubt is "will it answer questions about *our* per-client mess of transcripts, tickets and logs," and a CTO-deadline-bound skeptic won't hand over an email until they have seen that happen, so the value moment must occur on the page before the CTA.
+  How to apply: Above the fold, ship a working mini-demo with a pre-loaded fictional client (one meeting-transcript excerpt, one ticket, one log line, in Spanish) and a single question box pre-filled with "¿En qué estado está el deploy de [Cliente]?"; on submit, render the answer with inline citations pointing back to the three source snippets, and reveal the email CTA directly beneath the answer, not in the hero. Use sample data only, never ask them to paste real client data, since confidentiality is a hard blocker for this segment.
+
+PRINCIPLE 2: Social Proof
+  Why it fits: Senior engineers distrust vendor marketing but trust peers, and this product was literally born from an Ask HN thread, so the page can borrow credibility from people exactly like the visitor without inventing anything.
+  How to apply: Below the demo, place a block titled "De dónde salió esto" with 2-3 verbatim comments copied from the source Ask HN thread, each linking to its HN permalink, plus a link to the full thread. No waitlist counters or testimonials unless the numbers are real; a fabricated or round counter is the fastest way to lose this audience.
+
+PRINCIPLE 3: Spark Effect
+  Why it fits: They have a quarter, no budget line, and already live in Claude Code, so the conversion must feel like a 60-second step toward shipping, not the start of an enterprise procurement cycle.
+  How to apply: Make the CTA a single work-email field whose button copy states the cost and payoff in one line ("Mandame el repo starter · 1 comando · corre local, sin cuenta"), with a one-line note underneath that it runs with their existing Claude Code / coding agent setup. No "book a demo," no company-size dropdown, no second step; anything that smells like a sales funnel reads as Glean-tier tooling they cannot buy.
+
+Failure mode to watch: do not add scarcity or urgency copy on top of these; this audience reacts to pressure with Reactance, and the CTO deadline already supplies all the urgency the page needs.

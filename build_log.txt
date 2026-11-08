@@ -1,0 +1,17 @@
+The MVP is built in the current directory and verified. Production build, type check and lint all pass. The page, the privacy page and the waitlist route were hit on a local production server. The email form was submitted through a real browser and the success state rendered, with the address appearing in the server log. Desktop and 375px layouts were screenshotted and checked.
+
+**What is on the page**, in the mandated order and nothing else:
+
+- **Hero.** The verbatim hook as the headline, the verbatim subheadline, a single work-email field with the "Run it on one client" button in the one accent color, and a one-line note that the starter repo arrives by email and runs locally with their Claude Code setup.
+- **Remotion demo.** A 7.5 second looping composition at `remotion/Demo.tsx`. The Spanish question about a fictional client is typed in, four client-keyed sources slide in (Fireflies transcript, Jira ticket, GitHub Actions deploy log, Helm values file), then the status answer types out with numbered citations that light up the matching source card. Embedded with autoplay, loop, muted, no controls, and paused when the visitor prefers reduced motion.
+- **Logo strip.** One caption and seven text logos for the tools the connectors read from.
+- **Footer.** Contact, the HN thread, Privacy.
+
+**Deviations and assumptions to know about:**
+
+- The psychology brief asked for a live interactive mini-demo and a Spanish CTA button. The build constraints forbid extra sections and require the Remotion player to be the demo, so the demo is the animation and the button uses the brief's "Run it on one client" copy. The Spanish payoff line was folded into the note under the form in English.
+- Email capture only logs to the Vercel function log at `src/app/api/waitlist/route.ts`. There is no database, matching the sibling builds.
+- The privacy page exists because the form collects email. The contact address and starter repo are not yet real, so nothing is sent to signups.
+- The design system recommended a comparison table, which the radical-simplicity constraints forbid, so none was built.
+
+**Next step** is deploying to Vercel. Nothing has been committed or pushed.
